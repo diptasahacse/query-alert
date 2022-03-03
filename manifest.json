@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Query Alert",
+    "version": "1.0",
+    "description": "This is my first created extension..",
+    "icons": {
+        "128": "icons128.png",
+        "48": "icons48.png",
+        "16": "icons16.png"
+    },
+    "browser_action": {
+        "default_icon": "icons16.png",
+        "default_popup": "index.html"
+    }
+}
