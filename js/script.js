@@ -1,9 +1,14 @@
 document.getElementById('toggle-button').addEventListener('click', () => {
     let currentText = document.getElementById('toggle-button').innerText;
     if (currentText == "Play") {
-        currentText = "Pause";
+        // localStorage.setItem('active-status', 'Pause');
+        sessionStorage.setItem('active-status', 'Pause');
+        currentText = sessionStorage.getItem('active-status');
     } else {
-        currentText = "Play";
+        // localStorage.setItem('active-status', 'Play');
+        sessionStorage.setItem('active-status', 'Play');
+
+        currentText = sessionStorage.getItem('active-status');
 
     }
     document.getElementById('toggle-button').innerText = currentText;
